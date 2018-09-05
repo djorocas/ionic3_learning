@@ -12,7 +12,8 @@ import {QuotesPage} from "../pages/quotes/quotes";
 import {LibraryPage} from "../pages/library/library";
 import {TabsPage} from "../pages/tabs/tabs";
 import {QuotesService} from "../services/quote";
-import {TestPage} from "../pages/test/test";
+import {LoginPage} from "../pages/login/login";
+import {DashboardPage} from "../pages/dashboard/dashboard";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {TestPage} from "../pages/test/test";
     QuotesPage,
     LibraryPage,
     TabsPage,
-    TestPage
+    LoginPage,
+    DashboardPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import {TestPage} from "../pages/test/test";
     QuotesPage,
     LibraryPage,
     TabsPage,
-    TestPage
+    LoginPage,
+    DashboardPage
   ],
   providers: [
     StatusBar,
