@@ -14,7 +14,12 @@
 
 
 <ion-content padding>
-  <p>Id: {{ quote.id }}</p>
-  <p>Person: {{ quote.person }}</p>
-  <p>Text: {{ quote.text }}</p>
+
+  <p>id: {{ id }}</p>
+  <p>person: {{ person }}</p>
+  <p>text: {{ text }}</p>
+
+  <button ion-button color="danger" outline small (click)="onClose(true)">Unfavorite</button>
+  <button ion-button color="danger" (click)="onClose()">Close</button>
+
 </ion-content>

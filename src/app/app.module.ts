@@ -1,10 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { StatusBar } from '@ionic-native/status-bar';
+import {BrowserModule} from '@angular/platform-browser';
+import {ErrorHandler, NgModule} from '@angular/core';
+import {IonicApp, IonicErrorHandler, IonicModule} from 'ionic-angular';
+import {SplashScreen} from '@ionic-native/splash-screen';
+import {StatusBar} from '@ionic-native/status-bar';
 
-import { MyApp } from './app.component';
+import {MyApp} from './app.component';
 import {FavoritesPage} from "../pages/favorites/favorites";
 import {QuotePage} from "../pages/quote/quote";
 import {SettingsPage} from "../pages/settings/settings";
@@ -14,6 +14,7 @@ import {TabsPage} from "../pages/tabs/tabs";
 import {QuotesService} from "../services/quote";
 import {LoginPage} from "../pages/login/login";
 import {DashboardPage} from "../pages/dashboard/dashboard";
+
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import {DashboardPage} from "../pages/dashboard/dashboard";
     LibraryPage,
     TabsPage,
     LoginPage,
-    DashboardPage
+    DashboardPage,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +42,7 @@ import {DashboardPage} from "../pages/dashboard/dashboard";
     LibraryPage,
     TabsPage,
     LoginPage,
-    DashboardPage
+    DashboardPage,
   ],
   providers: [
     StatusBar,
@@ -50,4 +51,5 @@ import {DashboardPage} from "../pages/dashboard/dashboard";
     QuotesService
   ]
 })
-export class AppModule {}
+export class AppModule {
+}

@@ -42,8 +42,16 @@ export class QuotesPage implements OnInit {
         }
       ]
 
-    })
+    });
     alert.present();
+  }
+
+  onRemoveFromFavorite(quote: Quote) {
+    this.quoteservice.removeQuoteFromFavorites(quote);
+  }
+
+  isFavorite(quote: Quote) {
+    return this.quoteservice.isQuoteFavorite(quote);
   }
 
 
